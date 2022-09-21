@@ -10,7 +10,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<AppDbContext>(options => 
 {
-    options.UseNpgsql(builder.Configuration.GetConnectionString("PostgresConnection"));
+    options.UseNpgsql("Host=ilmhub123.postgres.database.azure.com; Port=5432; User Id=leverow@ilmhub123; Database=postgres; Password=joxa_123456789;");
 });
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
